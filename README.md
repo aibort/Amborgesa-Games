@@ -3,7 +3,7 @@
 
  Amborgesa Games, formado por Alberto Ibort y Alvar de Diego tiene el placer de presentar su nuevo proyecto; Amborguesa Kart. <br />
 # ¿Qué es Amborgesa Kart? <br />
- Es un fantástico y divertido videojuego que nace de la idea de tranformar el conocido MarioKart en un juego retro (de esos que tu padre jugaba en el bar cuando tenía más granos en la cara que tú ahora mismo) y añadir nuevas funciones que convertiran este clásico millenial en una auténtica competición PvP para dos jugadores!<br />
+ Es un fantástico y divertido videojuego que nace de la idea de transformar el conocido MarioKart en un juego retro (de esos que tu padre jugaba en el bar cuando tenía más granos en la cara que tú ahora mismo) y añadir nuevas funciones que convertiran este clásico millenial en una auténtica competición PvP para dos jugadores!<br />
 
 ## ¿Con qué me voy a encontrar al jugar Amborgesa Kart? <br />
 Comodidad...

@@ -7,9 +7,9 @@ Amborgesa Games, owned by Alberto Ibort and Alvar de Diego is pleased to introdu
 <!--# ¿Qué es Amborgesa Kart? <br />
  Es un fantástico y divertido videojuego que nace de la idea de transformar el conocido MarioKart en un juego retro (de esos que tu padre jugaba en el bar cuando tenía más granos en la cara que tú ahora mismo) y añadir nuevas funciones que convertiran este clásico millenial en una auténtica competición PvP para dos jugadores!<br /> -->
  # ¿What is Amborgesa Kart? <br />
-  It is a fanastic and fun videogame born from the idea of transforming the wellknown MarioKart into a retro game (one of those that your dad used to play when he had more acnee than you) and adding new features which will turn this millenial classic into an authentic two player PvP competition!
+  It is a fantastic and fun videogame born from the idea of transforming the wellknown MarioKart into a retro game (one of those that your dad used to play when he had more acnee than you) and adding new features which will turn this millenial classic into an authentic two player PvP competition!
 
-## ¿Con qué me voy a encontrar al jugar Amborgesa Kart? <br />
+<!-- ## ¿Con qué me voy a encontrar al jugar Amborgesa Kart? <br />
 Comodidad...
 ```sh
 Vista cenital para entender mejor el entorno y controles sencillos
@@ -25,7 +25,12 @@ Múltiples utilizables y power-ups con los que fastidiar a tu enemigo!
 Diversión...
 ```sh
 No tenemos portales, pero hay TUBERIAS y EXPLOSIONES!
-```
+``` --> 
+## What are you going to discover in Amborgesa Kart? <br/>
+Comfortability... (????)
+```sh
+The game is developed in a top view to understand better the surroundings and have easier controls 
+
 But most importantly...
 <img src="https://vignette.wikia.nocookie.net/fantendo/images/2/28/BaldToad.png/revision/latest?cb=20160119181800" />
 <br />

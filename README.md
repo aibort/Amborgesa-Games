@@ -25,12 +25,21 @@ Múltiples utilizables y power-ups con los que fastidiar a tu enemigo!
 Diversión...
 ```sh
 No tenemos portales, pero hay TUBERIAS y EXPLOSIONES!
-``` --> 
+```
+--> 
 ## What are you going to discover in Amborgesa Kart? <br/>
-Comfortability... (????)
+Comfortability... 
 ```sh
 The game is developed in a top view to understand better the surroundings and have easier controls 
-
+``` 
+Customizable...
+```sh
+Character selection of the most popular ones of our childhood(Ej:"").
+```
+Variety...
+```sh 
+Multiple items to use in your benefit or against your oponent in order to win the race
+```
 But most importantly...
 <img src="https://vignette.wikia.nocookie.net/fantendo/images/2/28/BaldToad.png/revision/latest?cb=20160119181800" />
 <br />

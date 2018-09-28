@@ -1,7 +1,8 @@
 <a href="https://fontmeme.com/mario-kart-wii-font/"><img src="https://fontmeme.com/permalink/180921/1cfa17c6f170d99fb7dc26635f7a6508.png" alt="mario-kart-wii-font" border="0"></a>
 <br />
 
- Amborgesa Games, formado por Alberto Ibort y Alvar de Diego tiene el placer de presentar su nuevo proyecto; Amborguesa Kart. <br />
+<!--Amborgesa Games, formado por Alberto Ibort y Alvar de Diego tiene el placer de presentar su nuevo proyecto; Amborguesa Kart. <br />-->
+Amborgesa Games, ?? by Alberto Ibort and Alvar de Diego is pleased to introduce its new project; Amborgesa Kart. <br />
 # ¿Qué es Amborgesa Kart? <br />
  Es un fantástico y divertido videojuego que nace de la idea de transformar el conocido MarioKart en un juego retro (de esos que tu padre jugaba en el bar cuando tenía más granos en la cara que tú ahora mismo) y añadir nuevas funciones que convertiran este clásico millenial en una auténtica competición PvP para dos jugadores!<br />
 

@@ -15,8 +15,8 @@ var BootScene = {
 };
 
 
-/*var PreloaderScene = {
-  preload: function () {
+var PreloaderScene = {
+ preload: function () {
     this.loadingBar = this.game.add.sprite(0, 240, 'preloader_bar');
     this.loadingBar.anchor.setTo(0, 0.5);
     this.load.setPreloadSprite(this.loadingBar);
@@ -27,10 +27,7 @@ var BootScene = {
 
   create: function () {
     this.game.state.start('play');
-  }
-}; */
-
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+    var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
     game.load.image('arrow', 'assets/sprites/arrow.png');
@@ -132,8 +129,15 @@ function update() {
 function render() {
 
     weapon.debug();
-
+ 
 }
+ 
+ window.onload = function () {
+   var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
+  }
+}
+};
+
 
 window.onload = function () {
   var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');

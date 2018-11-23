@@ -22,7 +22,7 @@ var PreloaderScene = {
     this.load.setPreloadSprite(this.loadingBar);
 
     // TODO: load here the assets for the game
-    this.game.load.image('logo', 'images/toadamborgesa.jpg');
+    //this.game.load.image('logo', 'images/MapaHito2.JPG');
   },
 
   create: function () {
@@ -107,7 +107,8 @@ function create() {
 }
 
 function update() {
-
+    var acceleration = 0;
+    acceleration = acceleration + 20;
     sprite.body.velocity.x = 0;
 
     if (cursors.left.isDown)
@@ -117,6 +118,14 @@ function update() {
     else if (cursors.right.isDown)
     {
         sprite.body.velocity.x = 200;
+    }
+    else if (cursors.up.isDown)
+    {
+        sprite.body.velocity.y = -200 * acceleration;
+    }
+    else if (cursors.down.isDown)
+    {
+        sprite.body.velocity.y = 200;
     }
 
     if (fireButton.isDown)

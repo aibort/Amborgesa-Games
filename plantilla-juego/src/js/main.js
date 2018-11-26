@@ -15,22 +15,19 @@ var BootScene = {
 };
 
 
-/*var PreloaderScene = {
-  preload: function () {
+var PreloaderScene = {
+ preload: function () {
     this.loadingBar = this.game.add.sprite(0, 240, 'preloader_bar');
     this.loadingBar.anchor.setTo(0, 0.5);
     this.load.setPreloadSprite(this.loadingBar);
 
     // TODO: load here the assets for the game
-    this.game.load.image('logo', 'images/toadamborgesa.jpg');
+    //this.game.load.image('logo', 'images/MapaHito2.JPG');
   },
 
   create: function () {
     this.game.state.start('play');
-  }
-}; */
-
-var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
+    var game = new Phaser.Game(800, 600, Phaser.AUTO, 'phaser-example', { preload: preload, create: create, update: update, render: render });
 
 function preload() {
     game.load.image('arrow', 'assets/sprites/arrow.png');
@@ -110,7 +107,8 @@ function create() {
 }
 
 function update() {
-
+    var acceleration = 0;
+    acceleration = acceleration + 20;
     sprite.body.velocity.x = 0;
 
     if (cursors.left.isDown)
@@ -120,6 +118,14 @@ function update() {
     else if (cursors.right.isDown)
     {
         sprite.body.velocity.x = 200;
+    }
+    else if (cursors.up.isDown)
+    {
+        sprite.body.velocity.y = -200 * acceleration;
+    }
+    else if (cursors.down.isDown)
+    {
+        sprite.body.velocity.y = 200;
     }
 
     if (fireButton.isDown)
@@ -132,8 +138,15 @@ function update() {
 function render() {
 
     weapon.debug();
-
+ 
 }
+ 
+ window.onload = function () {
+   var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');
+  }
+}
+};
+
 
 window.onload = function () {
   var game = new Phaser.Game(800, 600, Phaser.AUTO, 'game');

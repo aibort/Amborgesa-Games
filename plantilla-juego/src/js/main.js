@@ -59,7 +59,8 @@ var cursors;
 var fireButton;
 
 function create() {
-
+  game.world.setBounds(0, 0, 1920, 1920);
+  game.physics.startSystem(Phaser.Physics.P2JS);
   //  Creates 1 single bullet, using the 'bullet' graphic
   weapon = game.add.weapon(1, 'bullet');
 
@@ -75,19 +76,20 @@ function create() {
   sprite = this.add.sprite(320, 500, 'car');
 
   game.physics.arcade.enable(sprite);
-
+  
   //  Tell the Weapon to track the 'player' Sprite, offset by 14px horizontally, 0 vertically
   weapon.trackSprite(sprite, 14, 0);
 
   cursors = this.input.keyboard.createCursorKeys();
 
   fireButton = this.input.keyboard.addKey(Phaser.KeyCode.SPACEBAR);
-
+  game.camera.follow(sprite, Phaser.Camera.FOLLOW_LOCKON, 0.1, 0.1);
 }
 
 function update() {
 
   sprite.body.velocity.x = 0;
+  sprite.body.velocity.y = 0;
 
   if (cursors.left.isDown)
   {
@@ -116,5 +118,6 @@ function update() {
 function render() {
 
   weapon.debug();
+  game.debug.cameraInfo(game.camera, 32, 32);
 
 }

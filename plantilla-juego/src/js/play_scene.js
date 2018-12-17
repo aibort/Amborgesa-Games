@@ -9,19 +9,20 @@ var PlayScene = {
     this.game.physics.startSystem(Phaser.Physics.ARCADE);
     this.game.world.setBounds(0,0,10000,10000);
 
-    this.map = this.game.add.tilemap('mapa');
-    this.map.addTilesetImage('earth');
+   /* this.map = this.game.add.tilemap('mapa');
+    this.map.addTilesetImage('Earth', 'earth');
     
     this.suelo = this.map.createLayer('suelo');
     this.muros = this.map.createLayer('muros');
     this.suelo.resizeWorld();
-    this.muros.resizeWorld();
+    this.muros.resizeWorld();*/
 
-    /*var logo = this.game.add.sprite(
+    var logo = this.game.add.sprite(
       this.game.world.centerX, this.game.world.centerY, 'toad');
-    logo.anchor.setTo(0.5, 0.5);*/
+    logo.anchor.setTo(0.5, 0.5);
+    logo.scale.setTo(4.2,4.2);
 
-    this.jugador = new CAR.player(this.game, 'redcar', this.game.world.centerX, this.game.world.centerY, 0.5, 0.5, 0.5, 0.5);
+    this.jugador = new CAR.player(this.game, 'redcar', this.game.world.centerX, this.game.world.centerY, 0.5, 0.5, 0.1, 0.1);
     this.cursors = this.game.input.keyboard.createCursorKeys();
   },
 

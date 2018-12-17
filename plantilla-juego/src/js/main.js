@@ -23,9 +23,9 @@ var PreloaderScene = {
 
     // TODO: load here the assets for the game
     this.game.load.image('logo', 'images/phaser.png');
-    this.game.load.image('toad', 'images/toadamborgesa.jpg');
+    this.game.load.image('toad', 'images/mapa.png');
     this.game.load.image('redcar', 'images/redcar.png');
-    this.game.load.tilemap('mapa', 'images/mapa.json', null, Phaser.Tilemap.TILED_JSON);
+    this.game.load.tilemap('mapa', 'images/mapa/mapa.json', null, Phaser.Tilemap.TILED_JSON);
     this.game.load.image('earth', 'images/Earth.png');
   },
 

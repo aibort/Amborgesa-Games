@@ -31,7 +31,7 @@
  "tilesets":[
         {
          "firstgid":1,
-         "source":"earth.tsx"
+         "source":"..\/earth.tsx"
         }],
  "tilewidth":16,
  "version":1,

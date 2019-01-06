@@ -45,9 +45,9 @@ player.prototype.update = function(cursors,game)
 
   if(this.velocity!=0)
   {
-  if(cursors.left.isDown){ this.sprite.angle -= 2; }
+  if(cursors.left.isDown){ this.sprite.angle -= 3; }
 
-  else if(cursors.right.isDown){ this.sprite.angle += 2; }
+  else if(cursors.right.isDown){ this.sprite.angle += 3; }
   }
 
    if(cursors.up.isDown)

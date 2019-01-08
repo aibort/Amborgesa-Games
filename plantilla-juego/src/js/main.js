@@ -15,7 +15,6 @@ var BootScene = {
   }
 };
 
-
 var PreloaderScene = {
   preload: function () {
     this.loadingBar = this.game.add.sprite(0, 240, 'preloader_bar');
@@ -31,6 +30,7 @@ var PreloaderScene = {
     this.game.load.image('earth', 'images/Earth.png');
     this.game.load.spritesheet('play', 'images/play.png', 194, 100, 2);
     this.game.load.image('fondomenu', 'images/fondomenu.jpg');
+    this.game.load.image('muro', 'images/muro.jpg');
   },
 
   create: function () {

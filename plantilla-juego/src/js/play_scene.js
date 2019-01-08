@@ -28,16 +28,6 @@ var PlayScene = {
       left: this.game.input.keyboard.addKey(Phaser.Keyboard.A),
       right: this.game.input.keyboard.addKey(Phaser.Keyboard.D),
     };
-    //muro
-    this.muro1= new objeto.gameObject(this.game, 'muro', this.game.world.centerX, this.game.world.centerY, 0.5, 0.5, 0.1, 0.1 );
-  
-    this.objetos = this.game.add.group();
-    this.game.physics.enable(this.jugador, Phaser.Physics.ARCADE);
-    this.game.physics.enable(this.muro1, Phaser.Physics.ARCADE);
-    //this.objetos.add(this.jugador,false);
-    //this.objetos.add(this.jugador2);
-    //this.objetos.add(this.muro1);
-
   },
 
   update: function() {
@@ -46,8 +36,6 @@ var PlayScene = {
     this.jugador2.update(this.wasd, this.game);
    
     this.game.physics.arcade.collide(this.jugador.sprite, this.jugador2.sprite);
-
-    this.muro1.sprite.posX= this.jugador.sprite.posX;
       
     this.game.camera.follow(this.jugador.sprite); 
   },

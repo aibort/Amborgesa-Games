@@ -26,11 +26,8 @@ var PreloaderScene = {
     this.game.load.image('toad', 'images/mapa.png');
     this.game.load.image('redcar', 'images/redcar.png');
     this.game.load.image('bluecar', 'images/bluecar.png');
-    this.game.load.tilemap('mapa', 'images/mapa/mapa.json', null, Phaser.Tilemap.TILED_JSON);
-    this.game.load.image('earth', 'images/Earth.png');
     this.game.load.spritesheet('play', 'images/play.png', 194, 100, 2);
     this.game.load.image('fondomenu', 'images/fondomenu.jpg');
-    this.game.load.image('muro', 'images/muro.jpg');
   },
 
   create: function () {

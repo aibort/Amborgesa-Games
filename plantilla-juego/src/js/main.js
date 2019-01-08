@@ -1,7 +1,8 @@
 'use strict';
 
 var PlayScene = require('./play_scene.js');
-var CAR= require('./player.js');
+var Menu = require('./menu.js');
+//var CAR= require('./player.js');
 
 var BootScene = {
   preload: function () {
@@ -14,7 +15,6 @@ var BootScene = {
   }
 };
 
-
 var PreloaderScene = {
   preload: function () {
     this.loadingBar = this.game.add.sprite(0, 240, 'preloader_bar');
@@ -25,12 +25,13 @@ var PreloaderScene = {
     this.game.load.image('logo', 'images/phaser.png');
     this.game.load.image('toad', 'images/mapa.png');
     this.game.load.image('redcar', 'images/redcar.png');
-    this.game.load.tilemap('mapa', 'images/mapa/mapa.json', null, Phaser.Tilemap.TILED_JSON);
-    this.game.load.image('earth', 'images/Earth.png');
+    this.game.load.image('bluecar', 'images/bluecar.png');
+    this.game.load.spritesheet('play', 'images/play.png', 194, 100, 2);
+    this.game.load.image('fondomenu', 'images/fondomenu.jpg');
   },
 
   create: function () {
-    this.game.state.start('play');
+    this.game.state.start('menu');
   }
 };
 
@@ -40,6 +41,7 @@ window.onload = function () {
   game.state.add('boot', BootScene);
   game.state.add('preloader', PreloaderScene);
   game.state.add('play', PlayScene);
+  game.state.add('menu', Menu);
 
   game.state.start('boot');
 };
